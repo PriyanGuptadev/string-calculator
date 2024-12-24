@@ -11,7 +11,7 @@ The String Calculator is a simple kata intended to practice Test-Driven Developm
 
 - Navigate to the project directory
   ```
-    cd string_calculator_tdd
+    cd string-calculator
   ```
 
 - Ruby Version
