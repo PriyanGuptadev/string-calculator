@@ -1,24 +1,35 @@
-# README
+## Overview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The String Calculator is a simple kata intended to practice Test-Driven Development (TDD) skills. The goal is to implement a method that sums up numbers provided in a string format, following specific rules for delimiters and handling special cases.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+- Clone the repository
+  ```
+    git clone https://github.com/PriyanGuptadev/string-calculator.git
+  ```
 
-* System dependencies
+- Navigate to the project directory
+  ```
+    cd string_calculator_tdd
+  ```
 
-* Configuration
+- Ruby Version
+  ```
+  3.1.3
+  ```
 
-* Database creation
+- Rails Version
+  ```
+  7.0.8.7
+  ```
 
-* Database initialization
+- Install dependencies using Bundler
+  ```
+    bundle install
+  ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Run the test cases
+  ```
+    rspec
+  ```
