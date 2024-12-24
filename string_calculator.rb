@@ -10,7 +10,18 @@ class StringCalculator
       delimiter = /[\n,]/  # Default - commas and newlines
     end
 
-    # Split numbers using the delimiter and calculate the sum
-    numbers.split(/#{delimiter}/).map(&:to_i).sum
+    # Split numbers using the delimiter
+    num_array = numbers.split(/#{delimiter}/).map(&:to_i)
+
+    # Check for negative numbers
+    negatives = num_array.select { |num| num < 0 }
+
+    if negatives.any?
+      # Raise Exception
+      raise "negative numbers not allowed #{negatives.join(', ')}"
+    end
+
+    # Return sum
+    num_array.sum
   end
 end
