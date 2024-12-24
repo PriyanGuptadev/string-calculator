@@ -16,7 +16,7 @@ RSpec.describe 'StringCalculator' do
       expect(calculator.add("1,2,3")).to eq(6)
     end
     it 'handles negative numbers' do
-      expect(calculator.add("1,-2,3")).to eq(2)
+      expect { calculator.add("1,-2,3") }.to raise_error("negative numbers not allowed -2")
     end
     it 'handles large numbers' do
       expect(calculator.add("1000,2000,3000")).to eq(6000)
