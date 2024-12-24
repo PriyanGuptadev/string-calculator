@@ -15,5 +15,12 @@ RSpec.describe 'StringCalculator' do
     it 'returns the sum of multiple comma-separated numbers' do
       expect(calculator.add("1,2,3")).to eq(6)
     end
+    it 'handles negative numbers' do
+      expect(calculator.add("1,-2,3")).to eq(2)
+    end
+
+    it 'handles large numbers' do
+      expect(calculator.add("1000,2000,3000")).to eq(6000)
+    end
   end
 end
